@@ -1,9 +1,36 @@
+
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>Kommando – FF Hausruck</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
+  <style>
+    .kommando-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+      padding: 1em;
+    }
+    .mitglied {
+      width: 200px;
+      text-align: center;
+    }
+    .mitglied img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+    }
+    .mitglied h3 {
+      margin: 0.5em 0 0.2em;
+    }
+    .mitglied p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,21 +49,34 @@
   </header>
   <main>
     <h1>Kommando</h1>
-    <ul>
-      <li><strong>Kommandant:</strong> HBI Peter Pimmingsdorfer</li>
-      <li><strong>Kommandant-Stellvertreter:</strong> OBI Florian Ecker</li>
-      <li><strong>Schriftführer:</strong> BI d.F. René Sallaberger<br><a href="mailto:renesallaberger@gmail.com">renesallaberger@gmail.com</a></li>
-      <li><strong>Kassier:</strong> BI d.F. Walter Gross</li>
-      <li><strong>Lotsen- und Nachrichtenkommandant:</strong> BI Robert Eder</li>
-      <li><strong>Zeugwart:</strong> BI d.F. Andi Huber</li>
-      <li><strong>Atemschutzwart:</strong> LM Alex Kühberger</li>
-      <li><strong>Gruppenkommandanten:</strong>
-        <ul>
-          <li>HBM Tom Botka</li>
-          <li>HBM Dominik Kühberger</li>
-        </ul>
-      </li>
-    </ul>
+    <div class="kommando-grid">
+      <div class="mitglied">
+        <img src="bilder/pimmingstorfer.jpg" alt="HBI Peter Pimmingsdorfer">
+        <h3>HBI Peter Pimmingsdorfer</h3>
+        <p>Kommandant</p>
+      </div>
+      <div class="mitglied">
+        <img src="bilder/ecker.jpg" alt="OBI Florian Ecker">
+        <h3>OBI Florian Ecker</h3>
+        <p>Kommandant-Stellvertreter</p>
+      </div>
+      <div class="mitglied">
+        <img src="bilder/sallaberger.jpg" alt="BI d.F. René Sallaberger">
+        <h3>BI d.F. René Sallaberger</h3>
+        <p>Schriftführer</p>
+        <p><a href="mailto:renesallaberger@gmail.com">renesallaberger@gmail.com</a></p>
+      </div>
+      <div class="mitglied">
+        <img src="bilder/gross.jpg" alt="BI d.F. Walter Gross">
+        <h3>BI d.F. Walter Gross</h3>
+        <p>Kassier</p>
+      </div>
+      <div class="mitglied">
+        <img src="bilder/eder.jpg" alt="BI Robert Eder">
+        <h3>BI Robert Eder</h3>
+        <p>Lotsen- und Nachrichtenkommandant</p>
+      </div>
+    </div>
   </main>
   <footer>
     <p>&copy; 2025 Freiwillige Feuerwehr Hausruck</p>
