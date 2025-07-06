@@ -72,23 +72,16 @@
     </p>
   </main>
   
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-col">
-      <h4>Kontakt</h4>
-      <p>Hausruck 18<br>4906 Eberschwang<br>
-      <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a></p>
-    </div>
-    <div class="footer-col">
-      <h4>Links</h4>
-      <ul>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="https://www.facebook.com/ffhausruck/?locale=de_DE">Facebook</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+<footer class="site-footer" id="site-footer"></footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('site-header').innerHTML = data);
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('site-footer').innerHTML = data);
+  </script>
 
 </body>
 </html>
