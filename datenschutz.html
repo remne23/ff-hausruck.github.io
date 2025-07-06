@@ -1,33 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Datenschutz – FF Hausruck</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Datenschutzerklärung - FF Hausruck</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header" id="site-header"></header>
-
+  <div id="header-container"></div>
   <main>
     <h1>Datenschutzerklärung</h1>
-    <p>Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Ihre Daten werden ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003) verarbeitet.</p>
-    <p>In diesen Datenschutzinformationen informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website.</p>
-    <h2>Kontakt mit uns</h2>
-    <p>Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit uns aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen sechs Monate bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+
+    <h2>Allgemeines</h2>
+    <p>
+      Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003).
+    </p>
+
+    <h2>Verantwortlicher</h2>
+    <p>
+      Freiwillige Feuerwehr Hausruck<br>
+      Hausruck 18<br>
+      4906 Eberschwang<br>
+      E-Mail: <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a>
+    </p>
+
+    <h2>Server-Logfiles</h2>
+    <p>
+      Beim Besuch unserer Website speichert der Webserver automatisch folgende Daten:
+      IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp, Betriebssystem und Referrer-URL.
+      Diese Daten dienen ausschließlich zur Sicherstellung des technischen Betriebs und zur statistischen Auswertung. Sie werden nicht personenbezogen ausgewertet.
+    </p>
+
+    <h2>Kontaktaufnahme per E-Mail</h2>
+    <p>
+      Wenn Sie uns per E-Mail kontaktieren, speichern wir Ihre Angaben zur Bearbeitung Ihrer Anfrage sowie für mögliche Folgefragen. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+    </p>
+
+    <h2>Externe Links</h2>
+    <p>
+      Unsere Website enthält Links zu externen Webseiten (z. B. Facebook). Wir haben keinen Einfluss auf deren Inhalte oder Datenschutzrichtlinien.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      Unsere Website verwendet keine Cookies.
+    </p>
+
     <h2>Ihre Rechte</h2>
-    <p>Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren.</p>
+    <p>
+      Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie sich bei der Datenschutzbehörde beschweren.
+    </p>
   </main>
-
-  <footer class="site-footer" id="site-footer"></footer>
-
+  <div id="footer-container"></div>
   <script>
-    fetch('header.html')
-      .then(res => res.text())
-      .then(data => document.getElementById('site-header').innerHTML = data);
-    fetch('footer.html')
-      .then(res => res.text())
-      .then(data => document.getElementById('site-footer').innerHTML = data);
+    fetch("header.html").then(res => res.text()).then(data => {
+      document.getElementById("header-container").innerHTML = data;
+    });
+    fetch("footer.html").then(res => res.text()).then(data => {
+      document.getElementById("footer-container").innerHTML = data;
+    });
   </script>
 </body>
 </html>
