@@ -8,7 +8,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="header-container"></div>
+  
+<header class="site-header">
+  <div class="logo">
+    <img src="bilder/logo.png" alt="Logo FF Hausruck">
+  </div>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="einsaetze.html">Einsätze</a>
+    <a href="bewerbe.html">Bewerbe</a>
+    <a href="uebungen.html">Übungen</a>
+    <a href="fahrzeuge.html">Fahrzeuge</a>
+    <a href="kommando.html">Kommando</a>
+    <a href="kalender.html">Kalender</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <div class="contact-info">
+    <p>Kontakt: <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a></p>
+  </div>
+</header>
+
   <main>
     <h1>Impressum</h1>
 
@@ -23,7 +42,7 @@
     <p>
       Vertretungsbefugte Person:<br>
       HBI Peter Pimmingstorfer, Kommandant<br>
-      E-Mail: <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a>
+      E-Mail: <a href="mailto:pito@ff-hausruck.at">pito@ff-hausruck.at</a>
     </p>
 
     <h2>Grundlegende Richtung der Website</h2>
@@ -34,7 +53,7 @@
     <h2>Design und technische Umsetzung</h2>
     <p>
       René Sallaberger<br>
-      E-Mail: <a href="mailto:renesallaberger@gmail.com">renesallaberger@gmail.com</a>
+      E-Mail: <a href="mailto:rene@ff-hausruck.at">rene@ff-hausruck.at</a>
     </p>
 
     <h2>Nutzungshinweis</h2>
@@ -53,14 +72,24 @@
       Das Copyright für Design und Inhalte liegt bei der Freiwilligen Feuerwehr Hausruck. Alle Rechte vorbehalten.
     </p>
   </main>
-  <div id="footer-container"></div>
-  <script>
-    fetch("header.html").then(res => res.text()).then(data => {
-      document.getElementById("header-container").innerHTML = data;
-    });
-    fetch("footer.html").then(res => res.text()).then(data => {
-      document.getElementById("footer-container").innerHTML = data;
-    });
-  </script>
+  
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <p>Hausruck 18<br>4906 Eberschwang<br>
+      <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="https://www.facebook.com/ffhausruck/?locale=de_DE">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

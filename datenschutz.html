@@ -8,7 +8,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="header-container"></div>
+  
+<header class="site-header">
+  <div class="logo">
+    <img src="bilder/logo.png" alt="Logo FF Hausruck">
+  </div>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="einsaetze.html">Einsätze</a>
+    <a href="bewerbe.html">Bewerbe</a>
+    <a href="uebungen.html">Übungen</a>
+    <a href="fahrzeuge.html">Fahrzeuge</a>
+    <a href="kommando.html">Kommando</a>
+    <a href="kalender.html">Kalender</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <div class="contact-info">
+    <p>Kontakt: <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a></p>
+  </div>
+</header>
+
   <main>
     <h1>Datenschutzerklärung</h1>
 
@@ -52,14 +71,24 @@
       Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie sich bei der Datenschutzbehörde beschweren.
     </p>
   </main>
-  <div id="footer-container"></div>
-  <script>
-    fetch("header.html").then(res => res.text()).then(data => {
-      document.getElementById("header-container").innerHTML = data;
-    });
-    fetch("footer.html").then(res => res.text()).then(data => {
-      document.getElementById("footer-container").innerHTML = data;
-    });
-  </script>
+  
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <p>Hausruck 18<br>4906 Eberschwang<br>
+      <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="https://www.facebook.com/ffhausruck/?locale=de_DE">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
