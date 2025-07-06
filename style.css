@@ -125,3 +125,20 @@ main {
   flex-basis: 100%;
   margin-top: 1em;
 }
+
+.einsatz-galerie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.einsatz-galerie img {
+  width: 100%;
+  max-width: 300px; /* oder 100% bei kleinen Displays */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
