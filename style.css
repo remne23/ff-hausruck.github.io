@@ -83,3 +83,25 @@ main {
   margin: 0 auto;
   width: 100%;
 }
+
+
+.fahrzeug {
+  background: white;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fahrzeug h2 {
+  color: #990000;
+  margin-bottom: 0.5em;
+}
+
+.fahrzeug ul {
+  list-style: none;
+  padding-left: 0;
+}
+.fahrzeug li {
+  margin-bottom: 0.3em;
+}
