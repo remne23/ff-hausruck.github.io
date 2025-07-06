@@ -1,27 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>FF Hausruck</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
+  <title>Impressum - FF Hausruck</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header" id="site-header"></header>
-
+  <div id="header-container"></div>
   <main>
-    <h1>Impressum</h1><p>Angaben gemäß §5 E-Commerce-Gesetz.</p>
+    <h1>Impressum</h1>
+
+    <h2>Inhaber & Herausgeber</h2>
+    <p>
+      Freiwillige Feuerwehr Hausruck<br>
+      Hausruck 18<br>
+      4906 Eberschwang<br>
+      Österreich
+    </p>
+
+    <p>
+      Vertretungsbefugte Person:<br>
+      HBI Peter Pimmingstorfer, Kommandant<br>
+      E-Mail: <a href="mailto:pito@ff-hausruck.at">pito@ff-hausruck.at</a>
+    </p>
+
+    <h2>Grundlegende Richtung der Website</h2>
+    <p>
+      Diese Website dient der Information über die Tätigkeiten, Veranstaltungen und Einsätze der Freiwilligen Feuerwehr Hausruck.
+    </p>
+
+    <h2>Design und technische Umsetzung</h2>
+    <p>
+      René Sallaberger<br>
+      E-Mail: <a href="mailto:rene@ff-hausruck.at">rene@ff-hausruck.at</a>
+    </p>
+
+    <h2>Nutzungshinweis</h2>
+    <p>
+      Es ist untersagt, Design, Inhalte oder Bilder dieser Website ohne ausdrückliche, schriftliche Genehmigung der Freiwilligen Feuerwehr Hausruck zu verändern, zu kopieren, zu veröffentlichen oder als Grundlage für andere Projekte zu verwenden.
+      Der Download von Website-Inhalten begründet keinerlei Eigentumsrechte. Alle nicht ausdrücklich genannten Rechte bleiben vorbehalten.
+    </p>
+
+    <h2>Haftung für Links</h2>
+    <p>
+      Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+    </p>
+
+    <h2>Copyright</h2>
+    <p>
+      Das Copyright für Design und Inhalte liegt bei der Freiwilligen Feuerwehr Hausruck. Alle Rechte vorbehalten.
+    </p>
   </main>
-
-  <footer class="site-footer" id="site-footer"></footer>
-
+  <div id="footer-container"></div>
   <script>
-    fetch('header.html')
-      .then(res => res.text())
-      .then(data => document.getElementById('site-header').innerHTML = data);
-    fetch('footer.html')
-      .then(res => res.text())
-      .then(data => document.getElementById('site-footer').innerHTML = data);
+    fetch("header.html").then(res => res.text()).then(data => {
+      document.getElementById("header-container").innerHTML = data;
+    });
+    fetch("footer.html").then(res => res.text()).then(data => {
+      document.getElementById("footer-container").innerHTML = data;
+    });
   </script>
 </body>
 </html>
