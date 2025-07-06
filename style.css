@@ -126,19 +126,32 @@ main {
   margin-top: 1em;
 }
 
+
+
 .einsatz-galerie {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
-  margin-top: 1em;
+}
+
+.einsatz-galerie a {
+  display: block;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.einsatz-galerie a:hover {
+  transform: scale(1.03);
 }
 
 .einsatz-galerie img {
   width: 100%;
-  max-width: 300px; /* oder 100% bei kleinen Displays */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
