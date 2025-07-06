@@ -5,6 +5,8 @@
   <title>FF Hausruck</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
+  <!-- Lightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header" id="site-header"></header>
@@ -14,26 +16,40 @@
 <main>
   <h2>Letzte Einsätze</h2>
 
-  <section class="einsatz">
-    <h3>Verkehrsunfall auf der L1071</h3>
-    <p><strong>Datum:</strong> 4. April 2025</p>
-    <p>
-      Heute um 10:14 wurden wir zu einem Verkehrsunfall auf der Landesstraße L1071 alarmiert. 
-      Vor Ort führten wir gemeinsam mit den Einsatzkräften die notwendigen Aufräumarbeiten durch 
-      und stellten die Verkehrssicherheit wieder her. <br>
-      Dank des raschen Eingreifens unserer Kameradinnen und Kameraden konnte die Straße nach kurzer Zeit wieder freigegeben werden.
-    </p>
-    <p>Ein großes Dankeschön an alle Einsatzkräfte für die gute Zusammenarbeit!</p>
+<section class="einsatz">
+  <h3>Verkehrsunfall auf der L1071</h3>
+  <p><strong>Datum:</strong> 4. April 2025</p>
+  <p>
+    Heute um 10:14 wurden wir zu einem Verkehrsunfall auf der Landesstraße L1071 alarmiert. 
+    Vor Ort führten wir gemeinsam mit den Einsatzkräften die notwendigen Aufräumarbeiten durch 
+    und stellten die Verkehrssicherheit wieder her.
+  </p>
+  <p>
+    Dank des raschen Eingreifens unserer Kameradinnen und Kameraden konnte die Straße nach kurzer Zeit wieder freigegeben werden.
+  </p>
 
-    <div class="einsatz-galerie">
-      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_01.jpg" alt="Verkehrsunfall Traktor 1">
-      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_02.jpg" alt="Verkehrsunfall Traktor 2">
-      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_03.jpg" alt="Verkehrsunfall Traktor 3">
-      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_04.jpg" alt="Verkehrsunfall Traktor 4">
-      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_05.jpg" alt="Verkehrsunfall Traktor 5">
-      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_06.jpg" alt="Verkehrsunfall Traktor 6">
-    </div>
-  </section>
+  <div class="einsatz-galerie">
+    <a href="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_01.jpg" data-lightbox="vu-2025" data-title="Verkehrsunfall 1">
+      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_01.jpg" alt="VU 1" />
+    </a>
+    <a href="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_02.jpg" data-lightbox="vu-2025" data-title="Verkehrsunfall 2">
+      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_02.jpg" alt="VU 2" />
+    </a>
+    <a href="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_03.jpg" data-lightbox="vu-2025" data-title="Verkehrsunfall 3">
+      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_03.jpg" alt="VU 3" />
+    </a>
+    <a href="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_04.jpg" data-lightbox="vu-2025" data-title="Verkehrsunfall 4">
+      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_04.jpg" alt="VU 4" />
+    </a>
+    <a href="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_05.jpg" data-lightbox="vu-2025" data-title="Verkehrsunfall 5">
+      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_05.jpg" alt="VU 5" />
+    </a>
+    <a href="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_06.jpg" data-lightbox="vu-2025" data-title="Verkehrsunfall 6">
+      <img src="bilder/einsaetze/2025-04-04_VU/2025-04-04_VU_06.jpg" alt="VU 6" />
+    </a>
+  </div>
+</section>
+
 </main>
 
 
@@ -49,5 +65,7 @@
       .then(res => res.text())
       .then(data => document.getElementById('site-footer').innerHTML = data);
   </script>
+<!-- Lightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 </body>
 </html>
