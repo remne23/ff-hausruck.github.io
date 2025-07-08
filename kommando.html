@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -7,62 +6,9 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
-  <style>
-    .kommando-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2em;
-      justify-content: center;
-      padding: 1em;
-    }
-    .mitglied {
-      width: 200px;
-      text-align: center;
-    }
-    .mitglied img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      border: 2px solid #ccc;
-    }
-    .mitglied h3 {
-      margin: 0.5em 0 0.2em;
-    }
-    .mitglied p {
-      margin: 0;
-    }
-    .mitglied .platzhalter {
-      width: 100%;
-      height: 250px;
-      background: #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-      font-size: 0.9em;
-      color: #555;
-    }
-  </style>
-</head>
+  </head>
 <body>
-  <header class="site-header">
-    <div class="logo">
-      <img src="bilder/logo.png" alt="Logo FF Hausruck">
-    </div>
-    <nav>
-      <a href="index.html">Start</a>
-      <a href="einsaetze.html">Einsätze</a>
-      <a href="bewerbe.html">Bewerbe</a>
-      <a href="uebungen.html">Übungen</a>
-      <a href="fahrzeuge.html">Fahrzeuge</a>
-      <a href="kommando.html">Kommando</a>
-      <a href="kalender.html">Kalender</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-    <div class="contact-info">
-      <p>Kontakt: <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a></p>
-    </div>
-  </header>
+  <header class="site-header" id="site-header"></header>
 
   <main>
     <h1>Kommando</h1>
@@ -116,27 +62,15 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-col">
-      <h4>Feuerwehr Hausruck</h4>
-      <p>&copy; 2025 Freiwillige Feuerwehr Hausruck</p>
-    </div>
-    <div class="footer-col">
-      <h4>Rechtliches</h4>
-      <ul>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Kontakt</h4>
-      <p>Hausruck 18, 4906 Eberschwang<br>
-         <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a></p>
-    </div>
-    <div class="footer-col">
-      <h4>Folge uns</h4>
-      <a href="https://www.facebook.com/ffhausruck/?locale=de_DE" target="_blank">Facebook</a>
-    </div>
-  </footer>
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('site-header').innerHTML = data);
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('site-footer').innerHTML = data);
+  </script>
 </body>
 </html>
