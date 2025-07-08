@@ -11,8 +11,47 @@
   <header class="site-header" id="site-header"></header>
 
   <main>
-    <h1>Kontakt</h1><p>So erreichen Sie uns.</p>
-  </main>
+  <section class="kontakt-header">
+    <img src="bilder/WirbrauchendeinFeuer.png" alt="Wir brauchen dein Feuer" class="kontakt-banner" />
+  </section>
+
+  <section class="kontakt-info">
+    <h2>Kontakt</h2>
+    <p><strong>Freiwillige Feuerwehr Hausruck</strong></p>
+    <p>Hausruck 18<br>4906 Eberschwang</p>
+    <p><strong>Kommandant:</strong> HBI Peter Pimmingstorfer</p>
+    <p><strong>Telefon:</strong> <a href="tel:+436641234567">+43 676 5705514</a></p>
+    <p><strong>E-Mail:</strong> <a href="mailto:ffhausruck@aon.at">ffhausruck@aon.at</a></p>
+  </section>
+
+  <section class="kontakt-map">
+    <h3>So findest du uns</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.4797273752336!2d13.568123!3d48.158456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773b4d2b02d53ab%3A0xb85bcb6b3b585f66!2sHausruck%2018%2C%204906%20Eberschwang!5e0!3m2!1sde!2sat!4v1712345678901" 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <section class="kontakt-formular">
+    <h3>Kontaktformular</h3>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="nachricht">Nachricht:</label>
+      <textarea name="nachricht" id="nachricht" rows="5" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+  </section>
+</main>
 
   <footer class="site-footer" id="site-footer"></footer>
 
