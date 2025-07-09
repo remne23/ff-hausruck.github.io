@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Geschichte – FF Hausruck</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <h1>Unsere Geschichte</h1>
+    <p>
+      Die Freiwillige Feuerwehr Hausruck blickt auf eine lange und traditionsreiche Geschichte zurück. 
+      Seit der Gründung im Jahr XXXX setzen sich unsere Mitglieder mit großem Engagement für den Schutz 
+      der Bevölkerung ein – sei es bei Brandeinsätzen, technischen Hilfeleistungen oder in der Ausbildung neuer Kamerad:innen.
+    </p>
+    <p>
+      Im Laufe der Jahrzehnte wurde unsere Ausrüstung modernisiert, das Feuerwehrhaus erweitert 
+      und die Einsatzbereitschaft kontinuierlich verbessert. Trotz aller Fortschritte ist eines geblieben: 
+      Die Kameradschaft und der unermüdliche Einsatzwillen für die Sicherheit in unserer Gemeinde.
+    </p>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('site-header').innerHTML = data);
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('site-footer').innerHTML = data);
+  </script>
+</body>
+</html>
