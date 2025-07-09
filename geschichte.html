@@ -12,18 +12,73 @@
   <header class="site-header" id="site-header"></header>
 
   <main>
-    <h1>Unsere Geschichte</h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Geschichte – FF Hausruck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+<main>
+    <h1>Geschichte der Freiwilligen Feuerwehr Hausruck</h1>
     <p>
-      Die Freiwillige Feuerwehr Hausruck blickt auf eine lange und traditionsreiche Geschichte zurück. 
-      Seit der Gründung im Jahr XXXX setzen sich unsere Mitglieder mit großem Engagement für den Schutz 
-      der Bevölkerung ein – sei es bei Brandeinsätzen, technischen Hilfeleistungen oder in der Ausbildung neuer Kamerad:innen.
+      Die Freiwillige Feuerwehr Hausruck wurde im Jahr <strong>1886</strong> gegründet. Wie bei vielen anderen Wehren damals, war es notwendig, den Brandschutz dezentral in der Gemeinde zu organisieren, da es noch keine motorisierten Fahrzeuge gab. Die Ausrüstung musste mit Pferdebespannung an den Einsatzort gebracht werden – was sehr zeitintensiv war.
     </p>
+
     <p>
-      Im Laufe der Jahrzehnte wurde unsere Ausrüstung modernisiert, das Feuerwehrhaus erweitert 
-      und die Einsatzbereitschaft kontinuierlich verbessert. Trotz aller Fortschritte ist eines geblieben: 
-      Die Kameradschaft und der unermüdliche Einsatzwillen für die Sicherheit in unserer Gemeinde.
+      Der erste Hauptmann war <strong>Franz Knasmüller</strong>, ein Schmiedemeister aus Wolfharting. Zu den Gründungsmitgliedern zählten auch Johann Reiter (Felling), Franz Maier (Wappelsham), Jakob Bachinger (Wappelsham) und Josef Zweimüller (Pumberg).
     </p>
+
+    <p>
+      In der Folgezeit wurden verdiente Kameraden wie <strong>Josef Daringer</strong>, <strong>Karl Groß</strong> und <strong>Josef Meingassner</strong> zu Ehrenkommandanten ernannt. Zu Ehrenmitgliedern wurden <strong>Alois Roither</strong> und <strong>Johann Bleckenwegner</strong> ausgezeichnet.
+    </p>
+
+    <h2>Kommandanten seit der Gründung</h2>
+    <ul>
+      <li>1886–1902: Franz Knasmüller</li>
+      <li>1902–1910: Matthias Eder</li>
+      <li>1910–1923: Karl Groß</li>
+      <li>1923–1928: Franz Tiefenthaleer</li>
+      <li>1928–1933: Johann Groß</li>
+      <li>1933–1935: Franz Bachinger</li>
+      <li>1935–1940: Karl Huber</li>
+      <li>1940–1944: Franz Bachinger</li>
+      <li>1944–1953: Karl Groß</li>
+      <li>1953–1958: Johann Groß</li>
+      <li>1958–1968: Josef Meingassner</li>
+      <li>1968–1983: Josef Daringer</li>
+      <li>ab 1983: Bruno Kühlberger</li>
+    </ul>
+
+    <h2>Ausstattung & Mitgliederstand (1983)</h2>
+    <p>
+      Die Feuerwehr verfügte bereits über ein eigenes Feuerwehrhaus, eine moderne Tragkraftspritze und umfassende Ausrüstung. Der Mitgliederstand belief sich auf <strong>124 Kameraden</strong>, davon <strong>86 Aktive</strong> und <strong>38 Altgediente</strong>.
+    </p>
+
+    <h3>Kommando im Jahr 1983</h3>
+    <ul>
+      <li><strong>Kommandant:</strong> Bruno Kühlberger, Prinsach 4</li>
+      <li><strong>Stellvertreter:</strong> Franz Korntner, Wolfharting 23</li>
+      <li><strong>Zeugwart:</strong> Josef Eder, Hof 8</li>
+      <li><strong>Schriftführer:</strong> Johann Mayr, Fischen 9</li>
+      <li><strong>Kassenführer:</strong> Franz Pimmingerstorfer, Prinsach 12</li>
+    </ul>
   </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script>
+    fetch('header.html').then(res => res.text()).then(data => document.getElementById('site-header').innerHTML = data);
+    fetch('footer.html').then(res => res.text()).then(data => document.getElementById('site-footer').innerHTML = data);
+  </script>
+</body>
+</html>  
+</main>
 
   <footer class="site-footer" id="site-footer"></footer>
 
