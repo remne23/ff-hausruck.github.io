@@ -46,3 +46,44 @@
 .nav a:hover {
   color: #ffd700;
 }
+
+/* Burger-Icon */
+.burger {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 0.5em;
+  color: white;
+}
+
+/* Standard-Navigation */
+#nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Mobile-Ansicht */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #990000;
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav-menu a {
+    padding: 1em;
+    border-top: 1px solid white;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+}
+
