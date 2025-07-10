@@ -96,7 +96,7 @@ main {
 }
 
 .fahrzeug h2 {
-  color: #990000;
+  color: #a40000;
   margin-bottom: 0.5em;
   flex-basis: 100%;
 }
@@ -321,7 +321,7 @@ main {
 
 .kontakt-info h3 {
   margin-top: 0;
-  color: #990000;
+  color: #a40000;
 }
 
 .kontakt-info p {
