@@ -49,21 +49,21 @@
 
   <footer class="site-footer" id="site-footer"></footer>
 
- <script>
- fetch('header.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('site-header').innerHTML = data;
-    const script = document.createElement('script');
-    script.src = 'burger.js';
-    document.body.appendChild(script);
-  })
-  .catch(err => console.error('Fehler beim Laden von header.html:', err));
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('site-header').innerHTML = data;
 
-fetch('footer.html')
-  .then(res => res.text())
-  .then(data => document.getElementById('site-footer').innerHTML = data)
-  .catch(err => console.error('Fehler beim Laden von footer.html:', err));
+      // Jetzt burger.js dynamisch nachladen
+      const script = document.createElement('script');
+      script.src = 'burger.js';
+      document.body.appendChild(script);
+    });
+
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('site-footer').innerHTML = data);
 </script>
 
 </body>
