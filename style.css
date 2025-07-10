@@ -178,6 +178,17 @@ main {
   position: relative;
 }
 
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 20px;
+}
+
 .logo-text {
   display: flex;
   align-items: center;
@@ -266,7 +277,7 @@ main {
   }
 }
 
-/* ================================= kommando.css ===== */
+/* ================================= kommando.css =========================================== */
 .kommando-grid {
   display: flex;
   flex-wrap: wrap;
@@ -307,7 +318,7 @@ main {
   color: #555;
 }
 
-/* ================================= kontakt.css ===== */
+/* ================================= kontakt.css ======================================== */
 main {
   max-width: 1200px;
   margin: 0 auto;
