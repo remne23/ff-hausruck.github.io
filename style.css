@@ -220,6 +220,7 @@ main {
   cursor: pointer;
   padding: 0.5em;
   color: white;
+  margin-left: auto;
 }
 
 #nav-menu {
@@ -231,6 +232,7 @@ main {
 @media (max-width: 768px) {
   .burger {
     display: block;
+    margin-left: auto;
   }
 
   #nav-menu {
