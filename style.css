@@ -18,6 +18,10 @@ body {
   justify-content: space-between;
 }
 
+.site-header .logo img {
+  max-height: 100px;
+}
+
 .site-header nav {
   flex-grow: 1;
   text-align: center;
