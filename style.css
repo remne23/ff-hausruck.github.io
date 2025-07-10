@@ -19,7 +19,7 @@ body {
 }
 
 .site-header .logo img {
-  max-height: 100px;
+  max-height: 95px;
 }
 
 .site-header nav {
@@ -185,7 +185,7 @@ main {
 }
 
 .logo-img {
-  max-height: 100px;
+  max-height: 95px;
   height: auto;
 }
 
