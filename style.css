@@ -1,4 +1,4 @@
-/* ===== style.css ===== */
+/* ============================================ style.css ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -165,7 +165,7 @@ main {
   }
 }
 
-/* ===== header-style.css ===== */
+/* ====================================== header-style.css ===== */
 .header {
   background-color: #a40000;
   color: white;
@@ -175,6 +175,7 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  position: relative;
 }
 
 .logo-text {
@@ -235,6 +236,7 @@ main {
 @media (max-width: 768px) {
   .header {
     flex-wrap: nowrap;
+    align-items: center;
   }
   .burger {
     display: block;
@@ -242,11 +244,15 @@ main {
   }
 
   #nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
     display: none;
     flex-direction: column;
     background-color: #a40000;
-    width: 100%;
     text-align: center;
+    z-index: 1000;
   }
 
   #nav-menu a {
@@ -259,7 +265,7 @@ main {
   }
 }
 
-/* ===== kommando.css ===== */
+/* ================================= kommando.css ===== */
 .kommando-grid {
   display: flex;
   flex-wrap: wrap;
@@ -300,7 +306,7 @@ main {
   color: #555;
 }
 
-/* ===== kontakt.css ===== */
+/* ================================= kontakt.css ===== */
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -403,7 +409,7 @@ main {
   }
 }
 
-/* ===== startseite.css ===== */
+/* ====================================== startseite.css ===== */
 .hero {
   text-align: center;
   padding: 2em 1em;
