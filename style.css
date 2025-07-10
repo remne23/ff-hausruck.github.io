@@ -6,7 +6,7 @@ body {
 }
 
 .site-header, .site-footer {
-  padding: 1em;
+  padding: 0;
 }
 
 .site-header {
