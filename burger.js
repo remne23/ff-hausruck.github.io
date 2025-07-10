@@ -1,15 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const siteHeader = document.getElementById('site-header');
+(function() {
+  function initBurger() {
+    const siteHeader = document.getElementById('site-header');
+    if (!siteHeader) return;
 
-  // Warte kurz, bis fetch fertig ist (oder nutze MutationObserver, hier einfach timeout)
-  setTimeout(function() {
-    const burger = siteHeader.querySelector(".burger");
-    const nav = siteHeader.querySelector("#nav-menu");
+    const burger = siteHeader.querySelector('.burger');
+    const nav = siteHeader.querySelector('#nav-menu');
 
     if (burger && nav) {
-      burger.addEventListener("click", function() {
-        nav.classList.toggle("active");
+      burger.addEventListener('click', function() {
+        nav.classList.toggle('active');
       });
+    } else {
+      console.warn('Burger-Menü Elemente nicht gefunden.');
     }
-  }, 100);
-});
+  }
+
+  if (document.readyState === 'loading') {
+    // Seite lädt noch → warte auf DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Warte trotzdem kurz, bis fetch fertig ist
+      setTimeout(initBurger, 100);
+    });
+  } else {
+    // Seite ist schon geladen → warte nur auf fetch
+    setTimeout(initBurger, 100);
+  }
+})();
