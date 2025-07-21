@@ -57,14 +57,22 @@
   
 <footer class="site-footer" id="site-footer"></footer>
 
-  <script>
-    fetch('header.html')
-      .then(res => res.text())
-      .then(data => document.getElementById('site-header').innerHTML = data);
-    fetch('footer.html')
-      .then(res => res.text())
-      .then(data => document.getElementById('site-footer').innerHTML = data);
-  </script>
-  <script src="burger.js"></script>
+<script>
+  fetch('header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('site-header').innerHTML = data;
+
+    // Burger-Script NACH dem Header laden
+    const script = document.createElement('script');
+    script.src = 'burger.js';
+    document.body.appendChild(script);
+  });
+
+  fetch('footer.html')
+  .then(res => res.text())
+  .then(data => document.getElementById('site-footer').innerHTML = data);
+</script>
+  
 </body>
 </html>
