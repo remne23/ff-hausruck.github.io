@@ -272,6 +272,10 @@ main {
     border-top: 1px solid white;
   }
 
+  #nav-menu a:first-child {
+    border-top: 1px solid white;
+  }
+  
   #nav-menu.active {
     display: flex;
   }
