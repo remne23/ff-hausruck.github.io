@@ -519,4 +519,17 @@ main {
 .einsatzkarte-bild img:hover {
   transform: scale(1.05);
 }
+/* ====================================== Wetter WIdget.css ========================== */
+.wetter-widget-container {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* passt zu deiner Einsatzkarte */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.wetter-widget-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
