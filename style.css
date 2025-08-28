@@ -538,3 +538,7 @@ main {
   background-color: #a40000;
   color: white;
 }
+.bewerb-tabelle tr.highlight {
+  background-color: #fff3cd; /* helles Gelb */
+  font-weight: bold;
+}
