@@ -519,3 +519,22 @@ main {
 .einsatzkarte-bild img:hover {
   transform: scale(1.05);
 }
+/* ====================================== Nassbewerbe Tabelle.css ========================== */
+.bewerb-tabelle {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bewerb-tabelle th, .bewerb-tabelle td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.bewerb-tabelle th {
+  background-color: #a40000;
+  color: white;
+}
